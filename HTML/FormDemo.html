@@ -7,10 +7,22 @@
 </head>
 <body>
     <form action="Success.html">
+        <div>
+            <label for="company">Company Name:</label>
+            <input id="company" name="company" value="NEOSOFT" readonly />
+         </div>
+        
+         <br>
+         <div>
+            <label for="company1">Company Name:</label>
+            <input id="company1" name="company" value="NEOSOFT" disabled/>
+         </div>
+         <button type="button" onclick="changeValue()">CHANGE</button>
+         <br>
         <!-- text field-->
          <div>
             <label for="firstname">Enter First Name:</label>
-            <input id="firstname" name="myname" required onkeyup="getValue()" pattern="[A-Za-z ]*" />
+            <input id="firstname" name="myname" required  pattern="[A-Za-z ]*" />
          </div>
          <br>
         <div>
@@ -76,9 +88,14 @@
         </div>
     </form>
     <script>
-        function getValue(){
-            console.log(document.getElementById("firstname").value);
-        }
+       function changeValue(){
+            console.log(document.getElementById("company").value);
+        
+            document.getElementById("company").value="New Value"
+
+            console.log(document.getElementById("company1").value);
+            document.getElementById("company1").value="New Value in 2nd field"
+       }
         console.log("_________");
         console.log(document.getElementsByName("myname"));
     </script>
