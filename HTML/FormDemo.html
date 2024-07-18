@@ -10,7 +10,7 @@
         <!-- text field-->
          <div>
             <label for="firstname">Enter First Name:</label>
-            <input id="firstname" name="myname" required  />
+            <input id="firstname" name="myname" required onkeyup="getValue()" />
          </div>
          <br>
         <div>
@@ -34,11 +34,22 @@
         </div>
         <br>
         <div>
+            <label for="mailid">Select Courses for Training:</label>
+            <input type="checkbox" id="course1" value="Web Basics"  /> <label for="course1"> Web Basics</label>
+            <input type="checkbox" id="course2"  value="git"/> <label for="course2"> GIT</label>
+            <input type="checkbox" id="course3"  value="sql"/> <label for="course3"> SQL</label>
+            <input type="checkbox" id="course4"  value="node"/> <label for="course4"> NODE</label>
+            <input type="checkbox" id="course5"  value="angular"/> <label for="course5">ANGULAR</label>
+        </div>
+        <br>
+        <div>
             <input type="submit"  />
         </div>
     </form>
     <script>
-        console.log(document.getElementById("firstname"));
+        function getValue(){
+            console.log(document.getElementById("firstname").value);
+        }
         console.log("_________");
         console.log(document.getElementsByName("myname"));
     </script>
