@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <!-- text field-->
+         <div>
+            <label for="firstname">Enter First Name:</label>
+            <input id="firstname" name="myname" />
+         </div>
+         <br>
+        <div>
+            <label for="lastname">Enter Last Name:</label>
+            <input type="text" id="lastname" name="myname" placeholder="Enter last name" />
+        </div> 
+        <br>
+        <div>
+            <label for="age">Enter age:</label>
+            <input type="number" id="age" />
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" />
+        </div>
+        <br>
+        <div>
+            <label for="mailid">Enter email:</label>
+            <input type="email" id="mailid" />
+        </div>
+    </form>
+    <script>
+        console.log(document.getElementById("firstname"));
+        console.log("_________");
+        console.log(document.getElementsByName("myname"));
+    </script>
+</body>
+</html>
