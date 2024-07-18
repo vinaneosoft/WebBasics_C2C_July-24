@@ -6,11 +6,11 @@
     <title>Form</title>
 </head>
 <body>
-    <form>
+    <form action="Success.html">
         <!-- text field-->
          <div>
             <label for="firstname">Enter First Name:</label>
-            <input id="firstname" name="myname" />
+            <input id="firstname" name="myname" required  />
          </div>
          <br>
         <div>
@@ -20,17 +20,21 @@
         <br>
         <div>
             <label for="age">Enter age:</label>
-            <input type="number" id="age" />
+            <input type="number" id="age" min="12" max="40" required />
         </div>
         <br>
         <div>
             <label for="password">Enter password:</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" required minlength="3" maxlength="7" />
         </div>
         <br>
         <div>
             <label for="mailid">Enter email:</label>
-            <input type="email" id="mailid" />
+            <input type="email" id="mailid" required />
+        </div>
+        <br>
+        <div>
+            <input type="submit"  />
         </div>
     </form>
     <script>
