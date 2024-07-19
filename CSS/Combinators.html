@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*parent : section, child : div*/
+        section div{
+            /*direct and indirect div child of section*/
+            color: blue;
+        }
+        section>div{
+             /*direct div child of section*/
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <b>Child 1</b>
+        </div>
+        <div>
+            <b>Child 2</b>
+        </div>
+        <article>
+            <div>
+                <b> Child 3</b>
+            </div>
+        </article>
+        <div>
+            <b>Child 4</b>
+        </div>
+        <article>
+            <b>Child 5</b>
+        </article>
+    </section>
+  
+</body>
+</html>

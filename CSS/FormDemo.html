@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        /*select textfield*/
+        [type="text"]{
+            color: green;
+        }
+        /*apply dimension to checkboxes*/ 
+        /*sequence matters*/
+        .box{
+            height: 30px;
+            width: 30px;
+        }
+        [type="checkbox"]{
+            height: 20px;
+            width: 20px;
+        }
+    </style>
 </head>
 <body>
     <form action="Success.html">
@@ -47,8 +63,8 @@
         <br>
         <div>
             <label for="mailid">Select Courses for Training:</label>
-            <input type="checkbox" id="course1" name="course" value="Web Basics"  /> <label for="course1"> Web Basics</label>
-            <input type="checkbox" id="course2"  name="course" value="git"/> <label for="course2"> GIT</label>
+            <input type="checkbox" id="course1" class="box" name="course" value="Web Basics"  /> <label for="course1"> Web Basics</label>
+            <input type="checkbox" id="course2" class="box"  name="course" value="git"/> <label for="course2"> GIT</label>
             <input type="checkbox" id="course3"  name="course" value="sql"/> <label for="course3"> SQL</label>
             <input type="checkbox" id="course4"  name="course" value="node"/> <label for="course4"> NODE</label>
             <input type="checkbox" id="course5"  name="course" value="angular"/> <label for="course5">ANGULAR</label>
