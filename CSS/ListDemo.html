@@ -21,6 +21,21 @@
         h4.group1{
             font-style: italic;
         }
+        *{
+            background-color: grey;
+        }
+        /*select elements having type attribute*/
+        [type]{
+            border: 5px solid lightgreen;
+        }
+         /*select elements having type attribute and value A*/
+        [type="A"]{
+            font-weight: bold;
+        }
+         /*select ol elements having type attribute */
+        ol[type]{
+            text-align: end;
+        }
     </style>
      <link rel="stylesheet" href="./ExternalCSS/mystyle.css">
      <link rel="icon" href="./Media/moonlight.jpg">
@@ -65,7 +80,7 @@
     </ol>
 
     <h4>Training sessions</h4>
-    <ol type="A" reversed>
+    <ol type="1" reversed>
         <li>Web Basics</li>
         <li>GIT</li>
         <li>SQL</li>
@@ -74,7 +89,7 @@
         <li>React</li>
     </ol>
     <h4>Training sessions</h4>
-    <ol type="A"  start="4" reversed>
+    <ol type="I"  start="4" reversed>
         <li>Web Basics</li>
         <li>GIT</li>
         <li>SQL</li>
