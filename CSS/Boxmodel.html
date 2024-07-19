@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background: lightblue;
+            border: 5px solid;
+        }
+        section{
+            border :1px double red;
+            width: 70%;
+            background: lightcoral;
+            height:400px;
+        }
+        section>div{
+            border:1px solid green;
+            width: 50%;
+            background: lightgreen;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h3>Box Model</h3>
+    <div class="block" id="block1">
+        <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
+        <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
+        <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
+        <h4>How to Install VS Code on Ubuntu <h6>vs code</h6></h4> <!-- will not work-->
+    </div>
+</section>
+</body>
+</html>
