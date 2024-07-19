@@ -14,6 +14,23 @@
              /*direct div child of section*/
             background-color: yellowgreen;
         }
+        /*
+        sibling : #article1, sibling : div
+        */
+        #article1+div{
+            /*immediate sibling: div*/
+            font-size: 30px;
+        }
+        #article1+*{
+            /*immediate sibling: any*/
+            font-size: 30px;
+        }
+        #article1~div{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #article1~*{
+           text-transform: uppercase;
+        }
     </style>
 </head>
 <body>
@@ -24,17 +41,24 @@
         <div>
             <b>Child 2</b>
         </div>
-        <article>
+        <article id="article1">
             <div>
                 <b> Child 3</b>
             </div>
         </article>
-        <div>
+        <aside>
             <b>Child 4</b>
+        </aside>
+        <div>
+            <b>Child 5</b>
         </div>
         <article>
-            <b>Child 5</b>
+            <b>Child 6</b>
         </article>
+        <div>
+            <b>Child 7</b>
+        </div>
+
     </section>
   
 </body>
