@@ -7,19 +7,34 @@
     <style>
         body{
             background: lightblue;
-            border: 5px solid;
+          
+            border-top: dotted blue 5px;
         }
         section{
-            border :1px double red;
+            border-width: 5px 7px;
+            border-style: dotted double dashed solid;
+            border-color: pink yellow red blue;
             width: 70%;
             background: lightcoral;
             height:400px;
+            margin: 20px;
+            padding: 20px;
         }
         section>div{
             border:1px solid green;
-            width: 50%;
+            width: 500px;
             background: lightgreen;
-            height: 50%;
+            height: 300px;
+            border-radius: 20px;
+            margin-left: 30px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        #inline{
+            border: 2px solid ;
+            height: 100px;
+            width: 100px;
+          /*   display: block; */
         }
     </style>
 </head>
@@ -27,6 +42,7 @@
 <section>
     <h3>Box Model</h3>
     <div class="block" id="block1">
+        <b id="inline">INLINE ELEMENT</b>
         <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
         <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
         <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
