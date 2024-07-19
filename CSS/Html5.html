@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+    <details>
+        <summary>TERM</summary>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term
+            <b>hi</b>
+        </p>
+    </details>
+    <details>
+        <summary>TERM 2</summary>
+        <div>
+            Details regarding term 
+            <details>
+                <summary>TERM3</summary>
+                <p>Details regarding term2</p>
+                <p>Details regarding term2</p>
+                <p>Details regarding term2</p>
+            </details>
+        </div>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term</p>
+        <p>Details regarding term
+            <b>hi</b>
+        </p>
+    </details>
+   <input type="text" list="dcodelist" id="code" placeholder="select department">
+   <datalist id="dcodelist">
+        <option value="ld">LD</option>
+        <option >DN</option>
+        <option value="jv">JV</option>
+        <option >JS</option>
+   </datalist>
+   <input type="number" list="numlist" id="count" placeholder="select number of items">
+   <datalist id="numlist">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+   </datalist>
+   <input type="time" list="timelist" id="time" placeholder="select time">
+   <datalist id="timelist">
+        <option value="12:30"></option>
+        <option value="10:30"></option>
+        <option value="10:00"></option>
+        <option value="11:30"></option>
+        <option>10:30</option>
+   </datalist>
+   <input type="time" list="timelist2" id="time2" placeholder="select time">
+   <datalist id="timelist2">
+        <option>10:30</option>
+        <option>9:30</option>
+        <option>8:30</option>
+        <option>7:30</option>
+        <option>6:30</option>
+   </datalist>
+   <hr>
+   <div>
+    <h3>AUDIOS</h3>
+    <audio autoplay  src="./Media/file_example_MP3_2MG.mp3" controls></audio>
+
+    <audio controls>
+        <source src="./Media/fil_example_MP3_2MG.mp3"  type="audio/mp3"/>
+        <source src="./Media/file_example_MP3_2MG.ogg" type="audio/ogg"/>
+        <source src="./Media/file_example_MP3_2MG.mp3" type="audio/mp3">
+        <source src="./Media/file_example_MP3_2MG.mp3" type="audio/mp3">
+    </audio>
+    <audio src="./Media/neonarrow.mp4" controls></audio>
+
+    <video src="./Media/neonarrow.mp4" controls height="200" width="300"></video>
+
+    <video autoplay  controls height="200" width="300">
+        <source  src="./Media/neonarrow.mp4" >
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DyqWbOXSwF4?si=NfNHbXXVeLThRfDL" title="YouTube video player" allowfullscreen></iframe>
+   <iframe title="sample pdf" src="./Media/sample-pdf-files-sample1.pdf"></iframe>
+  </div>
+   <div>
+    <label for="myname">Enter your name</label>
+    <input type="text" id="myname"><button type="button" onclick="result.value=myname.value.toUpperCase()">CONVERT</button>
+    <p>
+        <b>Upper Case Name is : <span><output id="result"></output></span> </b>
+    </p>
+   </div>
+   <div>
+    <label for="lastname">Enter your last name</label>
+    <input type="text" id="lastname"><button type="button" onclick="result2.textContent=lastname.value.toLowerCase()">CONVERT</button>
+    <p>
+        <b>Upper Case Name is : <span id="result2"></span> </b>
+    </p>
+   </div>
+   <!-- <script>
+    function convert(){
+        const upperstring=document.getElementById("myname").value.toUpperCase();
+        document.getElementById("result").textContent=upperstring;
+    }
+   </script> -->
+</body>
+</html>

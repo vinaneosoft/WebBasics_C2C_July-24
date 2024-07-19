@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav within a page</title>
+    <style>
+        nav{
+            background-color: black;
+            padding: 5px;   
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#pagefooter">go to bottom</a>
+            <a href="#nestedList">Nested List</a>
+        </nav>
+    </header>
+    <h4>Training sessions</h4>
+    <ol>  <!-- 1-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+    <h4>Training sessions</h4>
+    <ol type="A"> <!-- a, I, i-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+    <h4>Training sessions</h4>
+    <ol type="1" start="4"> <!-- a, I, i-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+    <h4>Training sessions</h4>
+    <ol type="A" start="4"> <!-- a, I, i-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+
+    <h4>Training sessions</h4>
+    <ol type="A" reversed>
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+    <h4>Training sessions</h4>
+    <ol type="A"  start="4" reversed>
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+    <h4>Training sessions</h4>
+    <ul>   <!-- disc-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ul>
+    <h4>Training sessions</h4>
+    <ul type="circle"> <!-- square-->
+        <li>Web Basics</li>
+        <li>GIT</li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ul>
+    <div id="nestedList">
+    <h3>Nested Lists</h3>
+    <h4>Training sessions</h4>
+    <ol>  <!-- 1-->
+        <li><span>Web Basics</span>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+            </ol>
+        </li>
+        <li><span>GIT</span>
+            <ul type="disc"> <!-- disc, circle, square-->
+                <li>GIT repositories</li>
+                <li>GIT commands</li>
+                <li>GIT branches</li>
+                <li>GITHUB</li>
+            </ul>
+        </li>
+        <li>SQL</li>
+        <li>Node</li>
+        <li>Angular</li>
+        <li>React</li>
+    </ol>
+         
+</div>
+    <footer id="pagefooter">
+        this is bottom of the page
+         <!-- go to top -->
+    </footer>
+</body>
+</html>

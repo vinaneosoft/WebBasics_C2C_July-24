@@ -95,16 +95,23 @@
   </div>
    <div>
     <label for="myname">Enter your name</label>
-    <input type="text" id="myname"><button type="button" onclick="convert()">CONVERT</button>
+    <input type="text" id="myname"><button type="button" onclick="result.value=myname.value.toUpperCase()">CONVERT</button>
     <p>
-        <b>Upper Case Name is : <span id="result"></span> </b>
+        <b>Upper Case Name is : <span><output id="result"></output></span> </b>
     </p>
    </div>
-   <script>
+   <div>
+    <label for="lastname">Enter your last name</label>
+    <input type="text" id="lastname"><button type="button" onclick="result2.textContent=lastname.value.toLowerCase()">CONVERT</button>
+    <p>
+        <b>Upper Case Name is : <span id="result2"></span> </b>
+    </p>
+   </div>
+   <!-- <script>
     function convert(){
         const upperstring=document.getElementById("myname").value.toUpperCase();
         document.getElementById("result").textContent=upperstring;
     }
-   </script>
+   </script> -->
 </body>
 </html>

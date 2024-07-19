@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="Success.html">
+        <div>
+            <label for="company">Company Name:</label>
+            <input id="company" name="company" value="NEOSOFT" readonly />
+         </div>
+        
+         <br>
+         <div>
+            <label for="company1">Company Name:</label>
+            <input id="company1" name="company" value="NEOSOFT" disabled/>
+         </div>
+         <button type="button" onclick="changeValue()">CHANGE</button>
+         <br>
+        <!-- text field-->
+         <div>
+            <label for="firstname">Enter First Name:</label>
+            <input id="firstname" name="myname" required  pattern="[A-Za-z ]*" />
+         </div>
+         <br>
+        <div>
+            <label for="lastname">Enter Last Name:</label>
+            <input type="text" id="lastname" name="myname" placeholder="Enter last name" pattern="[A-Za-z ]{2,20}" />
+        </div> 
+        <br>
+        <div>
+            <label for="age">Enter age:</label>
+            <input type="number" id="age" min="12" max="40" required value="34" />
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="password" id="password" required minlength="3" maxlength="7" />
+        </div>
+        <br>
+        <div>
+            <label for="mailid">Enter email:</label>
+            <input type="email" id="mailid" required />
+        </div>
+        <br>
+        <div>
+            <label for="mailid">Select Courses for Training:</label>
+            <input type="checkbox" id="course1" name="course" value="Web Basics"  /> <label for="course1"> Web Basics</label>
+            <input type="checkbox" id="course2"  name="course" value="git"/> <label for="course2"> GIT</label>
+            <input type="checkbox" id="course3"  name="course" value="sql"/> <label for="course3"> SQL</label>
+            <input type="checkbox" id="course4"  name="course" value="node"/> <label for="course4"> NODE</label>
+            <input type="checkbox" id="course5"  name="course" value="angular"/> <label for="course5">ANGULAR</label>
+        </div>
+        <br>
+        <div>
+            <label for="mailid">Select Gender:</label>
+            <input type="radio" id="gender1" name="gender" value="male"  /> <label for="gender1"> Male</label>
+            <input type="radio" id="gender2"  name="gender" value="female"/> <label for="gender2"> Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="department">Select your department:</label>
+            <select  id="department">
+                <option value="LD">Learning and Development</option>
+                <option value="dn">Dot Net</option>
+                <option value="MB">Mobile</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="comments">Add Extra Comments:</label>
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="color">
+            <input type="datetime-local">
+            <input type="hidden">
+            <input type="week">
+            <input type="range"
+        </div>
+        <div>
+          <!--   <button  type="submit">SUBMIT</button> -->
+             <input type="submit"  /> 
+            <!-- <input type="image" src="./Media/moonlight.jpg" alt="moon" height="100" width="100">--> 
+            <input type="reset"
+        </div>
+    </form>
+    <script>
+       function changeValue(){
+            console.log(document.getElementById("company").value);
+        
+            document.getElementById("company").value="New Value"
+
+            console.log(document.getElementById("company1").value);
+            document.getElementById("company1").value="New Value in 2nd field"
+       }
+        console.log("_________");
+        console.log(document.getElementsByName("myname"));
+    </script>
+</body>
+</html>
