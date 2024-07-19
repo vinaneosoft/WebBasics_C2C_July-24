@@ -1,7 +1,7 @@
 Create any web page with the help of html4 tags and html5 tags (article section.....) to show top 5 visiting places from particular state.
 name
 info of that place
-embed video from youtube for that place (iframe)
+embed video from youtube for that place (iframe). use basic styling that u know 
 
-use basic styling that u know 
-
+Implement more pseudo classes (3 to 4) that not covered in session
+Implement more pseudo elements that not covered in session
