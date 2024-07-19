@@ -72,5 +72,39 @@
         <option>7:30</option>
         <option>6:30</option>
    </datalist>
+   <hr>
+   <div>
+    <h3>AUDIOS</h3>
+    <audio autoplay  src="./Media/file_example_MP3_2MG.mp3" controls></audio>
+
+    <audio controls>
+        <source src="./Media/fil_example_MP3_2MG.mp3"  type="audio/mp3"/>
+        <source src="./Media/file_example_MP3_2MG.ogg" type="audio/ogg"/>
+        <source src="./Media/file_example_MP3_2MG.mp3" type="audio/mp3">
+        <source src="./Media/file_example_MP3_2MG.mp3" type="audio/mp3">
+    </audio>
+    <audio src="./Media/neonarrow.mp4" controls></audio>
+
+    <video src="./Media/neonarrow.mp4" controls height="200" width="300"></video>
+
+    <video autoplay  controls height="200" width="300">
+        <source  src="./Media/neonarrow.mp4" >
+    </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DyqWbOXSwF4?si=NfNHbXXVeLThRfDL" title="YouTube video player" allowfullscreen></iframe>
+   <iframe title="sample pdf" src="./Media/sample-pdf-files-sample1.pdf"></iframe>
+  </div>
+   <div>
+    <label for="myname">Enter your name</label>
+    <input type="text" id="myname"><button type="button" onclick="convert()">CONVERT</button>
+    <p>
+        <b>Upper Case Name is : <span id="result"></span> </b>
+    </p>
+   </div>
+   <script>
+    function convert(){
+        const upperstring=document.getElementById("myname").value.toUpperCase();
+        document.getElementById("result").textContent=upperstring;
+    }
+   </script>
 </body>
 </html>
