@@ -15,10 +15,30 @@
             padding: 20px;
       
         }
+        #block1{
+            /*sequence matters : +right, +bottom, spreadvalue, color*/
+            box-shadow: 10px 3px 30px green;
+        }
+        #block2:hover{
+            /*sequence matters : -left, -top, spreadvalue, color*/
+            box-shadow: -10px -3px 3px ;
+        }
+        #block1 h1{
+            text-shadow: 3px 3px 10px;
+        }
+        #block1 h2{
+            text-shadow: 3px 3px 10px red;
+        }
     </style>
 </head>
 <body>
     <div class="block" id="block1">
+        <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
+        <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
+        <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
+        <h4>How to Install VS Code on Ubuntu <span>vs code</span> </h4> 
+    </div>
+    <div class="block" id="block2">
         <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
         <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
         <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
