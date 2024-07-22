@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PositionDemo</title>
+    <style>
+        body{
+            border: 5px solid pink
+        }
+        div{
+            border: 3px double green;
+            position: static;
+        }
+        #div1{
+            position: relative; /*from nearest boundary*/
+            left:30px;
+        }
+        #div2{
+            position: relative;
+            top:10px
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <b>India is my country</b>
+        <b>All Indians are my brothers and sisters</b>
+    </div>
+    <div id="div2">
+        <i>India is my country</i>
+        <i>All Indians are my brothers and sisters</i>
+    </div>
+
+</body>
+</html>
