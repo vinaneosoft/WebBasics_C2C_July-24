@@ -1,3 +1,6 @@
 create 3 difft parents for any one child element. Apply difft border colors. 
 Try with position: absolute for that child. Test how it works with parent boundary
 Note : keep parents static first. the parent 1: relative, then parent 2: relative, then parent 3: relative
+
+find out and implement shorthand property for transition
+

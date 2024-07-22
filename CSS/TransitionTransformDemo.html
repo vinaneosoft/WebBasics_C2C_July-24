@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasition</title>
+    <style>
+        .block{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            position: relative;
+            left:0px;
+            top:0px; 
+            transition: 2s;
+        }
+        #div1:hover{
+            height: 200px;
+            width: 300px;
+            left: 40px;
+            top:40px; 
+            background-color: red;
+        }
+        #div1{
+            transition-duration: 3s;
+            transition-delay: 5s;
+            transition-property: height, width;  /*default : all numeric properties mentioned */
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);  /*default : ease*/
+        }
+        #div2:hover{
+            transform:/* translateX(100px) */ /* rotateX(-45deg) */ /* scaleX(0.5) */ skewX(20deg)
+        }
+        #div3:hover{
+            transform:/* translate(50px) */ /* rotateY(-45deg) *//* scaleY(-2) */ skewY(20deg)
+        }
+        #div4:hover{
+            transform:/* translate(50px) */ /* rotate(-45deg) *//* scale(-2) */ skew(20deg, 30deg)
+        }
+        #div5:hover{
+            transform: matrix(1.5,1,1,1.5,100,100); /*do not use unit, use radian angle*/
+        }
+    </style>
+</head>
+<body>
+    <div  class="block" id="div5">
+        INDIA
+    </div>
+    <div  class="block" id="div1">
+        INDIA
+    </div>
+    <div  class="block" id="div2">
+        INDIA
+    </div>
+    <div  class="block" id="div3">
+        INDIA
+    </div>
+    <div  class="block" id="div4">
+        INDIA
+    </div>
+    <hr>
+   
+</body>
+</html>
