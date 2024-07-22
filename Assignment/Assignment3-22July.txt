@@ -4,3 +4,7 @@ Note : keep parents static first. the parent 1: relative, then parent 2: relativ
 
 find out and implement shorthand property for transition
 
+
+Try to use 3d transformation methods in 3d environment : google it
+
+Learn : CSS Grid System
