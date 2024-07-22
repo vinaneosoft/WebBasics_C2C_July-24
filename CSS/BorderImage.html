@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Border Image</title>
     <style>
-     
+        .block{
+            height: 300px;
+            width: 500px;
+            border: 3px solid red;
+            margin:30px;
+            display: inline-block;
+        }
+     #block1{
+        border-image-source: url("./Media/moonlight.jpg");
+        border-image-slice: 60;
+        border-image-width: 15px;
+        border-image-repeat: repeat;
+        border-image-outset: 30px;
+     }
+     #block2{
+        border-image: url("./Media/moonlight.jpg") repeat 60/15px/30px;
+     }
     </style>
 </head>
 <body>
-    
+    <div class="block" id="block1">
+        <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
+        <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
+        <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
+        <h4>How to Install VS Code on Ubuntu <span>vs code</span> </h4> 
+    </div>
+    <div class="block" id="block2">
+        <h1>How to Install VS Code on Ubuntu <small>vs code</small></h1>
+        <h2>How to Install VS Code on Ubuntu <small>vs code</small></h2>
+        <h3>How to Install VS Code on Ubuntu <span>vs code</span></h3>
+        <h4>How to Install VS Code on Ubuntu <span>vs code</span> </h4> 
+    </div>
 </body>
 </html>
