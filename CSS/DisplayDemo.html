@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .block{
+            height: 300px;
+            width: 400px;
+            border: 3px solid red;
+            display: inline-block; /*one line, height width applicable*/
+
+            /*block level elements :
+            1. take full width of parent;
+            2. new line
+            3. can give width and height
+            4. childs : block ele, inline
+            5. margin padding*/
+        }
+        .binline{
+            border: 2px double green;
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+             /*inline elements :
+             1. take width according to contents
+             2. one line
+             3. can not give width and height
+             4. childs : inline ele
+             5. margin padding : margine at only left and right*/
+        }
+        #block3, #block4{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="block" id="block1">
+        <b class="binline"><i>How to Install VS Code on Ubuntu</i></b>
+        <b class="binline">How to Install VS Code on Ubuntu</b><br>
+        <b class="binline">How to Install VS Code on Ubuntu</b>
+    </div>
+    <div class="block" id="block2">
+        <b class="binline"><i>How to Install VS Code on Ubuntu</i></b>
+        <b class="binline">How to Install VS Code on Ubuntu</b><br>
+        <b class="binline">How to Install VS Code on Ubuntu</b>
+    </div>
+    <hr>
+    <div id="block3">
+        <b ><i>How to Install VS Code on Ubuntu</i></b>
+        <b>How to Install VS Code on Ubuntu</b>
+        <b >How to Install VS Code on Ubuntu</b>
+    </div>
+    <div  id="block4">
+        <b ><i>How to Install VS Code on Ubuntu</i></b>
+        <b>How to Install VS Code on Ubuntu</b>
+        <b>How to Install VS Code on Ubuntu</b>
+    </div>
+</body>
+</html>
