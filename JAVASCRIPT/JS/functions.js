@@ -25,3 +25,10 @@ arrow2("Vina");
 const arrow3 = a => a.toUpperCase();
 
 console.log(arrow3("Vina"))
+
+console.log("--------------------");
+
+let salaries=[56789,78990,45666,788999,45666,78888];
+salaries.forEach(ele=>console.log(ele));
+
+salaries.forEach((salary, index, ref)=>console.log(salary+" "+index+" "+ref));
