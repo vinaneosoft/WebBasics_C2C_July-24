@@ -13,7 +13,7 @@
         }
         .container>*{
             border:3px dashed darkmagenta;
-            width: 200px;
+            flex-basis: 200px;
         }
         #flexContainer{     
             /*default flex direction is row*/
@@ -38,7 +38,9 @@
             order: 2;
         }
         #flexContainer2{
-            flex-wrap: wrap; /*nowrp, wrap reverse*/
+          /*   flex-direction: row;
+            flex-wrap: wrap; */ /*nowrp, wrap reverse*/
+            flex-flow: row wrap;
             justify-content: space-evenly; 
             align-items: flex-start;  /*n rows : n partitions*/
             align-content: flex-start; /*n row : 1 container  as partition*/
