@@ -7,5 +7,12 @@
 </head>
 <body>
     <button type="button" onclick="window.alert('inline js Button Clicked')">CLICK</button>
+    <button type="button" ondblclick="test()">CLICK</button>
+    <script>
+        console.log("Internal Javascript....");
+        function test(){
+            window.alert("interal js button clicked")
+        }
+    </script>
 </body>
 </html>
