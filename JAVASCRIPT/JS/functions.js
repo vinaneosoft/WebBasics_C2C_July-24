@@ -28,7 +28,17 @@ console.log(arrow3("Vina"))
 
 console.log("--------------------");
 
-let salaries=[56789,78990,45666,788999,45666,78888];
+let salaries=[56789,78990,45666,788999,49676,78888];
 salaries.forEach(ele=>console.log(ele));
-
 salaries.forEach((salary, index, ref)=>console.log(salary+" "+index+" "+ref));
+
+// find out all salaries greater than 50000
+const filterSalaries=salaries.filter(salary=>salary>50000);
+console.log(filterSalaries);
+
+salaries.filter(salary=>salary>50000).forEach(sal=>console.log(sal))
+
+console.log("--------------------");
+// find out first matching salary greater than 50000
+const filterSalary=salaries.find(salary=>salary>50000);
+console.log(filterSalary);
