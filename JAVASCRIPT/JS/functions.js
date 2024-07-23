@@ -42,3 +42,12 @@ console.log("--------------------");
 // find out first matching salary greater than 50000
 const filterSalary=salaries.find(salary=>salary>50000);
 console.log(filterSalary);
+
+console.log("--------------------");
+// increment everysalary by 5000 and display all new salaries
+const incrSalaries=salaries.map(salary=>salary+5000);
+console.log(incrSalaries);
+
+console.log("--------------------");
+// make sum of salaries
+
