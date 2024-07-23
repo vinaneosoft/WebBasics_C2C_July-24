@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Demo</title>
+    <style>
+        .container{
+            border: 4px solid green;
+            padding: 2px;
+            height: 300px;
+        }
+        .container>*{
+            border:3px dashed darkmagenta;
+        }
+
+        #flexContainer{
+            display: flex;
+            /*default flex direction is row*/
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    
+    <article class="container" id="flexContainer">
+        <div>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
+            creating a rhythm that has guided humans for thousands of years.
+        </div>
+        <section>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
+            creating a rhythm that has guided humans for thousands of years.
+        </section>
+        <div>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
+            creating a rhythm that has guided humans for thousands of years.
+        </div>
+        <div>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
+            creating a rhythm that has guided humans for thousands of years.
+        </div>
+        <div>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
+            creating a rhythm that has guided humans for thousands of years.
+        </div>
+    </article>
 </body>
 </html>
