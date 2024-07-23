@@ -13,7 +13,7 @@
         }
         .container>*{
             border:3px dashed darkmagenta;
-            width: 100px;
+            width: 200px;
         }
         #flexContainer{     
             /*default flex direction is row*/
@@ -37,6 +37,12 @@
         #flexContainer>*:last-child{
             order: 2;
         }
+        #flexContainer2{
+            flex-wrap: wrap; /*nowrp, wrap reverse*/
+            justify-content: space-evenly; 
+            align-items: flex-start;  /*n rows : n partitions*/
+            align-content: flex-start; /*n row : 1 container  as partition*/
+        }   
     </style>
 </head>
 <body>
@@ -90,6 +96,21 @@
         </div>
         <div>
             <span>5</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable
+        </div>
+        <div>
+            <span>6</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet 
+        </div>
+        <div>
+            <span>7</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable
+        </div>
+        <div>
+            <span>8</span>
             The brightest and largest object in our 
             night sky, the Moon makes Earth a more livable
         </div>
