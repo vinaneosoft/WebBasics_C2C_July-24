@@ -8,45 +8,90 @@
         .container{
             border: 4px solid green;
             padding: 2px;
-            height: 300px;
+            height: 400px;
+            display: flex;
         }
         .container>*{
             border:3px dashed darkmagenta;
+            width: 100px;
         }
-
-        #flexContainer{
-            display: flex;
+        #flexContainer{     
             /*default flex direction is row*/
-            flex-direction: column;
+            flex-direction: row; /*row, row-reverse, column, column-reverse*/
+            justify-content: space-evenly; /*flex-start, flex-end, space-between, space-around*/
+            align-items: center; /*stretch, center, flex-start, flex-end*/
+        }
+        #flexContainer>*:first-child{
+            order: 3;
+        }
+        #flexContainer>*:nth-child(2){
+            order: 4;
+        }
+        #flexContainer>*:nth-child(3){
+            align-self: flex-start;
+            order: 1;
+        }
+        #flexContainer>*:nth-child(4){
+            order: 5;
+        }
+        #flexContainer>*:last-child{
+            order: 2;
         }
     </style>
 </head>
 <body>
     <article class="container" id="flexContainer">
         <div>
+            <span>1</span>
             The brightest and largest object in our 
-            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
-            creating a rhythm that has guided humans for thousands of years.
+            night sky, the Moon makes Earth a more livable
         </div>
         <section>
+            <span>2</span>
             The brightest and largest object in our 
-            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
-            creating a rhythm that has guided humans for thousands of years.
+            night sky, the Moon makes Earth a more 
         </section>
         <div>
+            <span>3</span>
             The brightest and largest object in our 
-            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
-            creating a rhythm that has guided humans for thousands of years.
+            night sky, the Moon makes Earth a more livable 
         </div>
         <div>
+            <span>4</span>
             The brightest and largest object in our 
-            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
-            creating a rhythm that has guided humans for thousands of years.
+            night sky, the Moon makes Earth a more livable planet 
         </div>
         <div>
+            <span>5</span>
             The brightest and largest object in our 
-            night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, 
-            creating a rhythm that has guided humans for thousands of years.
+            night sky, the Moon makes Earth a more livable
+        </div>
+    </article>
+    <article class="container" id="flexContainer2">
+        <div>
+            <span>1</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable
+        </div>
+        <section>
+            <span>2</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more 
+        </section>
+        <div>
+            <span>3</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable 
+        </div>
+        <div>
+            <span>4</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable planet 
+        </div>
+        <div>
+            <span>5</span>
+            The brightest and largest object in our 
+            night sky, the Moon makes Earth a more livable
         </div>
     </article>
 </body>
