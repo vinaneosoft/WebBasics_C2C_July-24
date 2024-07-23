@@ -38,13 +38,25 @@ function add(num1,num2){
 
 const res=add(34,56);
 console.log(res);
-function sum(){
 
+function sum(...nums){
+    let s=0;
+    for(let ele of nums){
+        s=s+ele
+    }
+    return s;
 }
 
+document.write("<ol>")
+document.write("<li>"+sum()+"</li>");
+document.write("<li>"+sum(34)+"</li>");
+document.write("<li>"+sum(56,78)+"</li>");
+document.write("<li>"+sum(12,34,56)+"</li>");
+document.write("<li>"+sum(45,45,34,56,89,67)+"</li>");
+document.write("</ol>")
 
-sum();
-sum(34);
-sum(56,78);
-sum(12,34,56);
-sum(45,45,34,56,89,67)
+let ar=[45,67,7,7,88];
+console.log(sum(...ar));
+
+let ar2=[...ar, 45,678];
+console.log(ar2);
