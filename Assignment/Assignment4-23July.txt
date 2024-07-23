@@ -1,0 +1,7 @@
+Declare array of employee names
+
+Solve following using built-in methods
+
+1. Iterate array
+2. find all names starting with "A"/a
+3. Find first matching name ending with "Sharma"
