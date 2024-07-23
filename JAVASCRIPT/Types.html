@@ -7,12 +7,17 @@
 </head>
 <body>
     <button type="button" onclick="window.alert('inline js Button Clicked')">CLICK</button>
-    <button type="button" ondblclick="test()">CLICK</button>
+    <button type="button" ondblclick="internalJS()">CLICK</button>
+    <button type="button" onmouseover="externalJS()">HOVER</button>
     <script>
-        console.log("Internal Javascript....");
-        function test(){
-            window.alert("interal js button clicked")
+        console.log("Internal Javascript....1");
+        console.log("Internal Javascript....2");
+        console.log("Internal Javascript....3");
+        console.log("Internal Javascript....4");
+        function internalJS(){
+            window.alert("interal js button double clicked")
         }
     </script>
+    <script src="./JS/external.js"></script>
 </body>
 </html>
