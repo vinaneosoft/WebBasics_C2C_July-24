@@ -1,3 +1,4 @@
+// case sensitive comparision
 let companyName="Neosoft";
 console.log(companyName);
 console.log(typeof companyName); // string
@@ -14,10 +15,10 @@ let uppercase=companyName.toUpperCase();
 console.log(companyName);
 console.log(uppercase); // new memory location
 
-
 //2. if 2 literals have same value then their memory location will be same
 let company="Neosoft";
 console.log(companyName==company); // true when mem location same, if value same then mem location
+
 
 
 
@@ -27,4 +28,4 @@ let arr=["priya", 'aasha'];
 arr.sort();
 console.log(arr);
 
-// == loose checking //=== strict checking
+// == loose checking //=== strict checking : any value if u want to compare
