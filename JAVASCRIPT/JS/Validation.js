@@ -16,15 +16,16 @@ const errorNode5=document.getElementById("error5");
 
 firstnameNode.addEventListener("blur", ()=>validate1())
 const validate1=function(){
+    errorNode1.textContent=""
     const firstname=firstnameNode.value;
     console.log(firstname);
     if(firstname=="")
         errorNode1.textContent="first name is required";
     //firstnameNode.placeholder="first name is required";
-
 }
 lastnameNode.addEventListener("blur", ()=>validate2())
 const validate2=function(){
+    errorNode2.textContent=""
     const lastname=lastnameNode.value;
     console.log(lastname);
     if(lastname=="")
@@ -32,6 +33,7 @@ const validate2=function(){
 }
 ageNode.addEventListener("blur", ()=>validate3())
 const validate3=function(){
+    errorNode3.textContent=""
     const age=ageNode.value;
     console.log(age);
     if(age=="")
@@ -39,6 +41,7 @@ const validate3=function(){
 }
 mailidNode.addEventListener("blur", ()=>validate4())
 const validate4=function(){
+    errorNode4.textContent=""
     const mailid=mailidNode.value;
     console.log(mailid);
     if(mailid=="")
@@ -46,18 +49,16 @@ const validate4=function(){
 }
 passwordNode.addEventListener("blur", ()=>validate5())
 const validate5=function(){
+    errorNode5.textContent=""
     const password=passwordNode.value;
     console.log(password);
     if(password=="")
         errorNode5.textContent="password is required";
 }
 
-
-
-
-
-
 function test(event){
-    console.log("in test");
-    event.preventDefault();
+    validate1();
+    validate2();
+    validate3();
+    validate4();
 }
