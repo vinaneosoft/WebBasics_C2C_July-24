@@ -9,7 +9,8 @@
     
 
     <script>
-        const technologies=['HTML','CSS',"JAVASCRIPT","JQUERY"]
+        const technologies=['HTML','CSS',"JAVASCRIPT","JQUERY"];
+        const tech=["JAVA",'PYTHON']
         document.body.style.background="gray"
 
         const ulNode=document.createElement("ul");
@@ -20,19 +21,20 @@
             const liNode=document.createElement("li");
             liNode.textContent=tech
             liNode.setAttribute("id","i"+index);
-            ulNode.append(liNode);
+            ulNode.appendChild(liNode);
         })
         document.body.prepend(ulNode);
 
-        
+
         console.log("----------------------------")
-        const liNodes=technologies.map((tech, index)=>{
+        const liNodes=tech.map((tech, index)=>{
             const liNode=document.createElement("li");
             liNode.textContent=tech
             liNode.setAttribute("id","i"+index);
             return liNode;
         })
-        ulNode.append(...liNodes);
+
+        ulNode.append(...liNodes); 
 
     </script>
 </body>
