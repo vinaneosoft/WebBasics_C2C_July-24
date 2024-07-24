@@ -1,5 +1,5 @@
 class Book{
-    bookId;bookName;bookPrice
+    bookId;bookName;bookPrice;bookImage
 
     constructor(id=0,name="abc",price=0){
         this.bookId=id;

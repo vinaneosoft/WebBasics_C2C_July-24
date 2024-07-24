@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+</head>
+<body>
+    <div>
+        <label for="mailid">Select Courses for Training:</label>
+        <input type="checkbox" id="course1"   name="course" value="Web Basics"/> <label for="course1"> Web Basics</label>
+        <input type="checkbox" id="course2"  name="course" value="git"/> <label for="course2"> GIT</label>
+        <input type="checkbox" id="course3"   name="course" value="sql"/> <label for="course3"> SQL</label>
+        <input type="checkbox" id="course4"  name="course" value="node"/> <label for="course4"> NODE</label>
+        <input type="checkbox" id="course5"   name="course" value="angular"/> <label for="course5">ANGULAR</label>
+    </div>
+    <script>
+        let courses=[];
+        const checkNodes=document.getElementsByName("course")
+        console.log(checkNodes);
+        checkNodes.forEach(node=>node.addEventListener("change", ()=>collectData()))
+        function collectData(){
+        courses=[];
+           for(const node of checkNodes){
+                if(node.checked){
+                    courses.push(node.value);
+                }
+            }
+            console.log(courses);
+        }
+       
+    </script>
+</body>
+</html>
