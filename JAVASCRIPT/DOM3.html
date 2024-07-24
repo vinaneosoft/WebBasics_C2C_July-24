@@ -11,7 +11,7 @@
     <script>
         const technologies=['HTML','CSS',"JAVASCRIPT","JQUERY"];
         const tech=["JAVA",'PYTHON']
-        document.body.style.background="gray"
+        document.body.style.background="lightgray"
 
         const ulNode=document.createElement("ul");
         ulNode.setAttribute("id",'technologies')
@@ -30,12 +30,17 @@
         const liNodes=tech.map((tech, index)=>{
             const liNode=document.createElement("li");
             liNode.textContent=tech
-            liNode.setAttribute("id","i"+index);
+            liNode.setAttribute("id","n"+index);
             return liNode;
         })
 
         ulNode.append(...liNodes); 
-
+        let newLi=document.createElement("li");
+        // add id here
+         newLi.textContent="CPP"
+        document.getElementById("n0").before(newLi)
+        console.log(ulNode.childNodes);
+        console.log(ulNode.children);
     </script>
 </body>
 </html>

@@ -8,3 +8,6 @@ Implement following code for Book Array using built-in functions
 3. find book having id 4
 4. increase price of every book by 100
 5. display sum of prices of all books
+
+
+Implement after method with any example
