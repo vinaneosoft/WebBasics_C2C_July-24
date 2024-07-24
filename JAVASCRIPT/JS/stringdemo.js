@@ -25,7 +25,7 @@ console.log(branch==companyBranch); // false
 console.log(branch.localeCompare(companyBranch)); //  0 if both are equal
 console.log(branch.valueOf()==companyBranch.valueOf()); 
 
-//2. arrays are mutable
+//arrays are mutable
 let arr=["priya", 'aasha'];
 arr.sort();
 console.log(arr);
