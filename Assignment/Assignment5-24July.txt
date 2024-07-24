@@ -1,0 +1,10 @@
+Implement column-count property in CSS
+
+Implement font-face rule in CSS
+
+Implement following code for Book Array using built-in functions
+1. Iterate book array
+2. find books related to Java / java
+3. find book having id 4
+4. increase price of every book by 100
+5. display sum of prices of all books
