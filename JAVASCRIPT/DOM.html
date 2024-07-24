@@ -9,7 +9,7 @@
 
     <ol>
         <li id="backend">JAVA</li>
-        <li id="backend2"><b>PYTHON</b></li>
+        <li id="backend2"><b>PYTHON TECH</b></li>
         <li>C#</li>
         <li class="frontend">HTML</li>
         <li class="frontend">CSS</li>
@@ -17,6 +17,9 @@
    <h3 class="frontend">FRONT END TECH</h3>
    <!-- 2nd li -> p-->
    <p id="para">
+
+   </p>
+   <p id="para2">
 
    </p>
 
@@ -34,6 +37,16 @@
         console.log(liNode2.innerText);  // plain text
         const pnode=document.getElementById("para")
         pnode.innerHTML=liNode2.innerText;
+        document.getElementById("para2").innerHTML="<i>"+liNode2.innerHTML+"</i>";
+        
+        
+        const text=document.createTextNode("India is my country")
+        const bnode=document.createElement("b");
+        bnode.append(text);
+        document.body.append(bnode);
+
+
+        
     </script>
 </body>
 </html>
