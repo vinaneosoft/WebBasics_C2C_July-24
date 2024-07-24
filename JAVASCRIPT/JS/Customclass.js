@@ -22,3 +22,4 @@ let books=[
 ]
 
 books.forEach(book=>console.log(book))
+books.forEach(book=>console.log(Math.round(book.getDiscountPrice())))
