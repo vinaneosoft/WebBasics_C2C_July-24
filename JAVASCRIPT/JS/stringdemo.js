@@ -31,6 +31,16 @@ arr.sort();
 console.log(arr);
 
 // == loose checking //=== strict checking : any value if u want to compare
+console.log("------------");
+let  num1=78; let num2=78
+console.log(num1==num2); //true
+console.log("------------");
+let num3="78"
+console.log(num1==num3); //true // ignore type
+console.log("------------");
+console.log(num1===num3); //false
+console.log("------------");
+
 
 let obj1={
     id:678,
