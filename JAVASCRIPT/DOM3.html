@@ -24,12 +24,16 @@
         })
         document.body.prepend(ulNode);
 
-        technologies.map((tech, index)=>{
+        
+        console.log("----------------------------")
+        const liNodes=technologies.map((tech, index)=>{
             const liNode=document.createElement("li");
             liNode.textContent=tech
             liNode.setAttribute("id","i"+index);
-            ulNode.append(liNode);
+            return liNode;
         })
+        ulNode.append(...liNodes);
+
     </script>
 </body>
 </html>
