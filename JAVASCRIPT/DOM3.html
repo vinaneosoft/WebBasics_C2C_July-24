@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+
+    <script>
+        const technologies=['HTML','CSS',"JAVASCRIPT","JQUERY"]
+        document.body.style.background="gray"
+
+        const ulNode=document.createElement("ul");
+        ulNode.setAttribute("id",'technologies')
+        ulNode.type="square";
+
+        technologies.forEach((tech, index)=>{
+            const liNode=document.createElement("li");
+            liNode.textContent=tech
+            liNode.setAttribute("id","i"+index);
+            ulNode.append(liNode);
+        })
+        document.body.prepend(ulNode);
+
+        technologies.map((tech, index)=>{
+            const liNode=document.createElement("li");
+            liNode.textContent=tech
+            liNode.setAttribute("id","i"+index);
+            ulNode.append(liNode);
+        })
+    </script>
+</body>
+</html>
