@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+</head>
+<body>
+    <img id="moonImage" src="../CSS/Media/moonlight.jpg" alt="moonlight">
+    <button type="button" onclick="change()">CHANGE IMAGE</button>
+    <script>
+         const imageNode=document.getElementById("moonImage"); //HTMLElement
+        // what is path of image
+        console.log(imageNode.src);
+        // what is alternate text
+        console.log(imageNode.alt);
+        // what is height and width
+        console.log(imageNode.height);
+        console.log(imageNode.width);
+        const change=function(){
+            imageNode.src="../CSS/Media/moonwater.jpg"
+          //  imageNode.height="500" // attribute
+            imageNode.style.height="300px"
+        }
+    </script>
+</body>
+</html>
