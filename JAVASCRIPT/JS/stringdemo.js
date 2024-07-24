@@ -41,7 +41,6 @@ console.log("------------");
 console.log(num1===num3); //false
 console.log("------------");
 
-
 let obj1={
     id:678,
     name:"hari"
@@ -52,3 +51,18 @@ let obj2={
     name:"hari"
 }
 console.log(obj1==obj2);
+
+const country="India is my country. I love my country"
+console.log(country.length);
+console.log(country.substring(0,4));
+console.log(country.substring(4));
+console.log(country.substring(6,3)); // 3, 6
+console.log(country.substring(-6,3)); // -6 replaced with 0
+
+console.log("--------------");
+console.log(country.slice(0,4));
+console.log(country.slice(4));
+console.log(country.slice(6,3));  // no output
+console.log(country.slice(-6,3)); // backward counting from 1
+console.log(country.slice(-10,-2));
+console.log(country.slice(-37,10));
