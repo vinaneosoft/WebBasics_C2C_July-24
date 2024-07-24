@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+    <ol>
+        <li id="backend">JAVA</li>
+        <li id="backend2"><b>PYTHON</b></li>
+        <li>C#</li>
+        <li class="frontend">HTML</li>
+        <li class="frontend">CSS</li>
+    </ol>
+   <h3 class="frontend">FRONT END TECH</h3>
+
+    <script>
+        const liNodes=document.getElementsByTagName("li")
+        console.log(liNodes);
+        const nodes=document.getElementsByClassName("frontend")
+        console.log(nodes);
+        const liNode=document.getElementById("backend")
+        console.log(liNode);
+        console.log(liNode.textContent);
+        const liNode2=document.getElementById("backend2")
+        console.log(liNode2.textContent); // plain text
+        console.log(liNode2.innerHTML);
+        console.log(liNode2.innerText);  // plain text
+    </script>
+</body>
+</html>
