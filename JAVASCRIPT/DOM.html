@@ -15,6 +15,10 @@
         <li class="frontend">CSS</li>
     </ol>
    <h3 class="frontend">FRONT END TECH</h3>
+   <!-- 2nd li -> p-->
+   <p id="para">
+
+   </p>
 
     <script>
         const liNodes=document.getElementsByTagName("li")
@@ -28,6 +32,8 @@
         console.log(liNode2.textContent); // plain text
         console.log(liNode2.innerHTML);
         console.log(liNode2.innerText);  // plain text
+        const pnode=document.getElementById("para")
+        pnode.innerHTML=liNode2.innerText;
     </script>
 </body>
 </html>
