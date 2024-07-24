@@ -38,7 +38,10 @@
         let newLi=document.createElement("li");
         // add id here
          newLi.textContent="CPP"
-        document.getElementById("n0").before(newLi)
+         let newLi2=document.createElement("li");
+        // add id here
+         newLi2.textContent="C"
+        document.getElementById("n0").before(newLi2,newLi)
         console.log(ulNode.childNodes);
         console.log(ulNode.children);
     </script>
