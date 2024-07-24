@@ -19,9 +19,11 @@ console.log(uppercase); // new memory location
 let company="Neosoft";
 console.log(companyName==company); // true when mem location same, if value same then mem location
 
-
-
-
+//3. if 2 string objects have same value, still their memory locations will be difft
+let companyBranch=new String("Rabale");
+console.log(branch==companyBranch); // false
+console.log(branch.localeCompare(companyBranch)); //  0 if both are equal
+console.log(branch.valueOf()==companyBranch.valueOf()); 
 
 //2. arrays are mutable
 let arr=["priya", 'aasha'];
@@ -29,3 +31,14 @@ arr.sort();
 console.log(arr);
 
 // == loose checking //=== strict checking : any value if u want to compare
+
+let obj1={
+    id:678,
+    name:"hari"
+}
+
+let obj2={
+    id:678,
+    name:"hari"
+}
+console.log(obj1==obj2);
