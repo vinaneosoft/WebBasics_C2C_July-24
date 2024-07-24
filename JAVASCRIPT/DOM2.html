@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM2</title>
+    <style>
+        .imageStyle{
+            border: 5px solid red;
+            border-radius: 50%;
+        }
+        .borderClass{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <img id="moonImage" src="../CSS/Media/moonlight.jpg" alt="moonlight">
-    <button type="button" onclick="change()">CHANGE IMAGE</button>
+    <img id="moonImage" src="../CSS/Media/moonlight.jpg" alt="moonlight" class="borderClass">
+    <button type="button" onclick="change()" id="changeButton">CHANGE IMAGE</button>
     <script>
          const imageNode=document.getElementById("moonImage"); //HTMLElement
         // what is path of image
@@ -20,8 +30,20 @@
         const change=function(){
             imageNode.src="../CSS/Media/moonwater.jpg"
           //  imageNode.height="500" // attribute
-            imageNode.style.height="300px"
+            imageNode.style.height="400px"
+          //  imageNode.classList.add("imageStyle");
         }
+        const changeButton = document.getElementById("changeButton");
+        // inline style
+        changeButton.style.cssText="border-radius:10px; border:5px double"
+        changeButton.style.backgroundColor="lightgreen";
+        changeButton.style.padding="10px";
+
+        // styling via adding class in element
+       // imageNode.setAttribute("class", "imageStyle") // it sets given attribute to that element
+        // above method replace class attribute if already present
+       imageNode.classList.add("imageStyle");
+        // above method will add new value in existing class attribute
     </script>
 </body>
 </html>
