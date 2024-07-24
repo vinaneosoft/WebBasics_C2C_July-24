@@ -1,7 +1,7 @@
 class Book{
     bookId;bookName;bookPrice
 
-    constructor(id=0,name="",price=0){
+    constructor(id=0,name="abc",price=0){
         this.bookId=id;
         this.bookName=name;
         this.bookPrice=price;
@@ -16,7 +16,9 @@ let books=[
     new Book(1, "Java Tech", 560),
     new Book(3, "Java Easy Way", 460),
     new Book(2, "Learn Python", 700.45),
-    new Book(4, "Basics of Web", 340)
+    new Book(4, "Basics of Web", 340),
+    new Book(),
+    new Book(7,"Unit Testing Learning")
 ]
 
 books.forEach(book=>console.log(book))
