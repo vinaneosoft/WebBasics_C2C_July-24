@@ -57,12 +57,16 @@ const validate4=function(){
         errorNode4.textContent="Please enter valid email id";
 }
 passwordNode.addEventListener("blur", ()=>validate5())
+const passPattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{6,12}$";
+const regExp=new RegExp(passPattern);
 const validate5=function(){
     errorNode5.textContent=""
     const password=passwordNode.value;
     console.log(password);
     if(password=="")
         errorNode5.textContent="password is required";
+    else if(!regExp.test(password))
+        errorNode5.textContent="please enter valid password";
 }
 
 function test(event){
