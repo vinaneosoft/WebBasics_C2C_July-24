@@ -15,11 +15,11 @@
     </ol>
 
 
-   <h3 class="frontend">FRONT END TECH</h3>
+   <h3 class="frontend"><span>FRONT END TECH<small>Neosoft</small></span></h3>
    <!-- 2nd li -> p-->
-   <p id="para">
+   <div id="block1">
 
-   </p>
+   </div>
    <p id="para2">
 
    </p>
@@ -34,24 +34,12 @@
         console.log($(".frontend").text());
         // i want text of only li elements having class frontend
         console.log($("li.frontend"))
-        console.log($("li.frontend").text());
+        console.log($("li.frontend").text()); // text() ==> innerText
         console.log($("li"))
 
-      /*   console.log(liNode2.textContent); // plain text
-        console.log(liNode2.innerHTML);
-        console.log(liNode2.innerText);  // plain text
-        const pnode=document.getElementById("para")
-        pnode.innerHTML=liNode2.innerText;
-        document.getElementById("para2").innerHTML="<i>"+liNode2.innerHTML+"</i>";
-        
-        
-        const text=document.createTextNode("India is my country")
-        const bnode=document.createElement("b");
-        bnode.append(text);
-        document.body.append(bnode);
- */
-
-        
+        console.log($("h3.frontend").html());
+        const contents=$("h3.frontend").html();
+        $("#block1").html(contents);
     </script>
 </body>
 </html>
