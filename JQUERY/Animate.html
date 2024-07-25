@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <img src="../CSS/Media/moonlight.jpg" alt="moon">
+    <img src="../CSS/Media/moonlight.jpg" alt="moon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        const imageStyle={
+            borderRadius:"50%",
+            width:"400px",
+            height:"400px",
+            opacity:"1",
+        }
+       $(document).ready(
+            function(){
+                $("img").mouseover(function(){
+                    $(this).animate(imageStyle,500);
+                });
+                $("img").mouseout(function(){
+                    $(this).animate({borderRadius:"0px", height:"200px", width:"200px", opacity:"0.2"},500);
+                });
+            }
+       );
+    </script>
+</body>
+</html>
