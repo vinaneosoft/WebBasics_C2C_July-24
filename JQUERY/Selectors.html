@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .decoration{
+            text-transform: lowercase;
+            border:2px solid lightcoral
+        }
+    </style>
 </head>
 <body>
     <ol>
@@ -50,6 +56,7 @@
             "text-decoration" :"underline" // css key put in quotes
         }
         $("#li2").css(styleObject);
+        $("h3.frontend").addClass("decoration"); // classList.add
     </script>
 </body>
 </html>
