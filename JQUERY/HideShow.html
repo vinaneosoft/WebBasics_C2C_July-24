@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIDE SHOW</title>
     <style>
-        #hidebtn{
+        #hideshowbtn{
             padding: 10px 30px;
           
         }
@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <button type="button" id="hidebtn">HIDE</button> <br>  <br>
+    <button type="button" id="hideshowbtn">HIDE</button> <br>  <br>
     <img src="../CSS/Media/moonlight.jpg" alt="moon">
     <img src="../CSS/Media/moonlight.jpg" alt="moon"> <br>
     <b>above image will be removed from dom</b>
@@ -25,9 +25,10 @@
     <script>
        $(document).ready(
             function(){
-                $("#hidebtn").click(
+                $("#hideshowbtn").click(
                     function(){
-                        $("img").hide(1000); //effect
+                        $("img").hide(1000, ()=> $("#hideshowbtn").text("SHOW")); //effect
+                       
                     }
                 );
             }
