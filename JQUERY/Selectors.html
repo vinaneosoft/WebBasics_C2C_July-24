@@ -26,9 +26,7 @@
    <div id="block1">
 
    </div>
-   <p id="para2">
-
-   </p>
+   <input type="text" id="fname" placeholder="enter name">
 
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
@@ -57,6 +55,11 @@
         }
         $("#li2").css(styleObject);
         $("h3.frontend").addClass("decoration"); // classList.add
+       // $("#fname").keyup(()=>console.log($("#fname").val()));
+       /*we can use this to refer outer selected element but dont use arrow fun in that case*/
+        $("#fname").keyup(function(){
+            console.log($(this).val())
+        });
     </script>
 </body>
 </html>
