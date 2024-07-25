@@ -17,7 +17,8 @@
 </head>
 <body>
     <button type="button" class="btn" id="hideshowbtn">FADE OUT</button>
-    <button type="button" class="btn" id="togglebtn">FADE TODDLE</button> <br>  <br>
+    <button type="button" class="btn" id="togglebtn">FADE TODDLE</button>
+    <button type="button" class="btn" id="fadetobtn">FADE TO</button> <br>  <br>
     <img src="../CSS/Media/moonlight.jpg" alt="moon">
     <img src="../CSS/Media/moonlight.jpg" alt="moon"> <br>
 
@@ -41,6 +42,9 @@
                         $("img").fadeToggle(1000);
                     }
                 );
+                $("#fadetobtn").click(function(){
+                    $("img").fadeTo(500,0.3);  /*2 compulsory parameters duration, opacity*/
+                })
             }
        );
     </script>
