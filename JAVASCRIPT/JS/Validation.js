@@ -38,6 +38,9 @@ const validate3=function(){
     console.log(age);
     if(age=="")
         errorNode3.textContent="age is required";
+    else if(age<12 || age>40){
+        errorNode3.textContent="age must be between 12 to 40";
+    }
 }
 mailidNode.addEventListener("blur", ()=>validate4())
 const validate4=function(){
