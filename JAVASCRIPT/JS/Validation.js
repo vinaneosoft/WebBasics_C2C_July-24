@@ -19,10 +19,22 @@ const validate1=function(){
     errorNode1.textContent=""
     const firstname=firstnameNode.value;
     console.log(firstname);
-    if(firstname=="")
+    if(firstname==""){
         errorNode1.textContent="first name is required";
-    else if(firstname.length<2)
+        return false;
+    }
+    else if(firstname.length<2){
         errorNode1.textContent="Please enter valid name";
+        return false;
+    }
+    else if(!firstname.match("^[A-Za-z ]*$")) {
+        errorNode1.textContent="Please enter only characters";
+        return false;
+    }
+    else{
+        return true;
+    }
+    // pattern matching here : use match function of string API  [A-Za-z ]*
     //firstnameNode.placeholder="first name is required";
 }
 lastnameNode.addEventListener("blur", ()=>validate2())
@@ -30,20 +42,34 @@ const validate2=function(){
     errorNode2.textContent=""
     const lastname=lastnameNode.value;
     console.log(lastname);
-    if(lastname=="")
+    if(lastname==""){
         errorNode2.textContent="last name is required";
-    else if(lastname.length>20)
+        return false;
+    }
+    else if(lastname.length>20){
         errorNode2.textContent="Please enter valid last name";
+        return false;
+    }
+    else{
+        return true;
+    }
+       // pattern matching here : use match function of string API  [A-Za-z ]*
 }
 ageNode.addEventListener("blur", ()=>validate3())
 const validate3=function(){
     errorNode3.textContent=""
     const age=ageNode.value;
     console.log(age);
-    if(age=="")
+    if(age==""){
         errorNode3.textContent="age is required";
+        return false;
+    }
     else if(age<12 || age>40){
         errorNode3.textContent="age must be between 12 to 40";
+        return false;
+    }
+    else{
+        return true;
     }
 }
 mailidNode.addEventListener("blur", ()=>validate4())
@@ -51,27 +77,44 @@ const validate4=function(){
     errorNode4.textContent=""
     const mailid=mailidNode.value;
     console.log(mailid);
-    if(mailid=="")
+    if(mailid==""){
         errorNode4.textContent="emailid is required";
+        return false;
+    }
     else if(!mailid.includes("@") || mailid.startsWith("@") || mailid.endsWith("@") || mailid.endsWith(".") || mailid.startsWith("."))
+       {
         errorNode4.textContent="Please enter valid email id";
+        return false;
+    }
+    else{
+        return true;
+    }
+       
+    // do pattern matching for email
 }
 passwordNode.addEventListener("blur", ()=>validate5())
-const passPattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{6,12}$";
+const passPattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*\?]).{6,12}";
 const regExp=new RegExp(passPattern);
 const validate5=function(){
     errorNode5.textContent=""
     const password=passwordNode.value;
     console.log(password);
-    if(password=="")
+    if(password==""){
         errorNode5.textContent="password is required";
-    else if(!regExp.test(password))
-        errorNode5.textContent="please enter valid password";
+        return false;
+    }
+        
+    else if(!regExp.test(password)){
+        errorNode5.textContent="password must contain atleast 1 small letter, capital letter, digit, symbol[]. password must be 6 to 12 chars long";
+        return false;
+    }
+    else{
+        return true;
+    }
+        
 }
 
-function test(event){
-    validate1();
-    validate2();
-    validate3();
-    validate4();
+function validateAll(){
+   // if all fields are valid then we will return true else we will return false
+   
 }
