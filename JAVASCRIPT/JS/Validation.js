@@ -21,6 +21,8 @@ const validate1=function(){
     console.log(firstname);
     if(firstname=="")
         errorNode1.textContent="first name is required";
+    else if(firstname.length<2)
+        errorNode1.textContent="Please enter valid name";
     //firstnameNode.placeholder="first name is required";
 }
 lastnameNode.addEventListener("blur", ()=>validate2())
@@ -30,6 +32,8 @@ const validate2=function(){
     console.log(lastname);
     if(lastname=="")
         errorNode2.textContent="last name is required";
+    else if(lastname.length>20)
+        errorNode2.textContent="Please enter valid last name";
 }
 ageNode.addEventListener("blur", ()=>validate3())
 const validate3=function(){
@@ -49,6 +53,8 @@ const validate4=function(){
     console.log(mailid);
     if(mailid=="")
         errorNode4.textContent="emailid is required";
+    else if(!mailid.includes("@") || mailid.startsWith("@") || mailid.endsWith("@") || mailid.endsWith(".") || mailid.startsWith("."))
+        errorNode4.textContent="Please enter valid email id";
 }
 passwordNode.addEventListener("blur", ()=>validate5())
 const validate5=function(){
