@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIDE SHOW</title>
     <style>
-        #hideshowbtn{
+        .btn{
             padding: 10px 30px;
           
         }
@@ -16,7 +16,8 @@
     </style>
 </head>
 <body>
-    <button type="button" id="hideshowbtn">HIDE</button> <br>  <br>
+    <button type="button" class="btn" id="hideshowbtn">HIDE</button>
+    <button type="button" class="btn" id="togglebtn">TOGGLE</button> <br>  <br>
     <img src="../CSS/Media/moonlight.jpg" alt="moon">
     <img src="../CSS/Media/moonlight.jpg" alt="moon"> <br>
     <b>above image will be removed from dom</b>
@@ -27,8 +28,16 @@
             function(){
                 $("#hideshowbtn").click(
                     function(){
-                        $("img").hide(1000, ()=> $("#hideshowbtn").text("SHOW")); //effect
-                       
+                        if($("#hideshowbtn").text()=="HIDE")
+                            $("img").hide(200, ()=> $("#hideshowbtn").text("SHOW")); 
+                        else
+                            $("img").show(500, ()=> $("#hideshowbtn").text("HIDE"));
+                    }
+                );
+
+                $("#togglebtn").click(
+                    function(){
+                        $("img").toggle(1000);
                     }
                 );
             }
