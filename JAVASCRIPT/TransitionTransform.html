@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #move{
+            height: 100px;
+            width: 100px;
+            border: solid 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="move"></div>
+    <script>
+        const divNode=document.getElementById("move");
+        const position=divNode.getBoundingClientRect();
+        console.log(position);
+        divNode.addEventListener("mouseover",()=>{
+            divNode.style.transform="translate(200px, 200px)"
+            divNode.style.transition="5s"
+        })
+        divNode.addEventListener("mouseout",()=>{
+             divNode.style.transform=`translate(${position.x}px, ${position.y}px)`
+            divNode.style.transition="5s"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Implement pattern matching for email
+
+Implement remove method to remove any element from DOM (remove, removeChild)

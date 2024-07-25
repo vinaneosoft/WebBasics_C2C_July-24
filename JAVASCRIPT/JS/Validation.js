@@ -111,10 +111,13 @@ const validate5=function(){
     else{
         return true;
     }
-        
 }
-
 function validateAll(){
    // if all fields are valid then we will return true else we will return false
-   
+   const r1=validate1();
+   const r2=validate2();
+   const r3=validate3();
+   const r4=validate4();
+   const r5=validate5();
+   return  r1 && r2 && r3 && r4 && r5
 }
