@@ -30,16 +30,26 @@
         console.log($("#li1"));
         console.log($("#li1").text());
         console.log($(".frontend"));
-
         console.log($(".frontend").text());
         // i want text of only li elements having class frontend
         console.log($("li.frontend"))
         console.log($("li.frontend").text()); // text() ==> innerText
         console.log($("li"))
-
         console.log($("h3.frontend").html());
         const contents=$("h3.frontend").html();
         $("#block1").html(contents);
+        // extract contents from first li and also add new contents as JAVA Basics
+        const oldcontents=$("#li1").text();
+        console.log(oldcontents);
+        $("#li1").text("JAVA BASICS")
+        // attribute selector, combinators, psceudo class selector
+        $("#li1").css("color","red"); // one key value pair
+        const styleObject={
+            color:"green",
+            backgroundColor:"yellow", //javascript key : camel case no quotes
+            "text-decoration" :"underline" // css key put in quotes
+        }
+        $("#li2").css(styleObject);
     </script>
 </body>
 </html>

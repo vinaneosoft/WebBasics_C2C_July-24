@@ -1,3 +1,5 @@
 Implement pattern matching for email
 
 Implement remove method to remove any element from DOM (remove, removeChild)
+
+ Implemet any example on  attribute selector, combinators, psceudoclass selector in jquery
