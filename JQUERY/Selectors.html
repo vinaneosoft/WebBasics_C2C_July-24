@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ol>
+        <li id="li1">JAVA</li>
+        <li id="li2"><b>PYTHON TECH</b></li>
+        <li>C#</li>
+        <li class="frontend">HTML</li>
+        <li class="frontend">CSS</li>
+    </ol>
+
+
+   <h3 class="frontend">FRONT END TECH</h3>
+   <!-- 2nd li -> p-->
+   <p id="para">
+
+   </p>
+   <p id="para2">
+
+   </p>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+
+        console.log($("#li1"));
+        console.log($("#li1").text());
+        console.log($(".frontend"));
+
+        console.log($(".frontend").text());
+        // i want text of only li elements having class frontend
+        console.log($("li.frontend"))
+        console.log($("li.frontend").text());
+        console.log($("li"))
+
+      /*   console.log(liNode2.textContent); // plain text
+        console.log(liNode2.innerHTML);
+        console.log(liNode2.innerText);  // plain text
+        const pnode=document.getElementById("para")
+        pnode.innerHTML=liNode2.innerText;
+        document.getElementById("para2").innerHTML="<i>"+liNode2.innerHTML+"</i>";
+        
+        
+        const text=document.createTextNode("India is my country")
+        const bnode=document.createElement("b");
+        bnode.append(text);
+        document.body.append(bnode);
+ */
+
+        
+    </script>
+</body>
+</html>
