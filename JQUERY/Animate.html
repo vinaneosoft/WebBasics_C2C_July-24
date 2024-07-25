@@ -9,6 +9,7 @@
             height: 200px;
             width: 200px;
             opacity: 0.2;
+            border: 10px double green;
         }
     </style>
 </head>
@@ -16,17 +17,20 @@
     <img src="../CSS/Media/moonlight.jpg" alt="moon">
     <img src="../CSS/Media/moonlight.jpg" alt="moon">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <!-- to support color animations-->
+    <script src="https://code.jquery.com/color/jquery.color-3.0.0.min.js"></script>
     <script>
         const imageStyle={
             borderRadius:"50%",
-            width:"400px",
-            height:"400px",
+           // width:"400px",
+           // height:"400px",
             opacity:"1",
+            borderColor:"yellow"
         }
        $(document).ready(
             function(){
                 $("img").mouseover(function(){
-                    $(this).animate(imageStyle,500);
+                    $(this).animate(imageStyle,2000);
                 });
                 $("img").mouseout(function(){
                     $(this).animate({borderRadius:"0px", height:"200px", width:"200px", opacity:"0.2"},500);
