@@ -1,10 +1,6 @@
 
-
-
-
 // add blur event on every node and call individual validation funciton
 // extract values from nodes
-
 $("#firstname").on("blur", ()=>validate1())
 const validate1=function(){
     $("#error1").text("");
@@ -77,9 +73,7 @@ const validate4=function(){
     }
     else{
         return true;
-    }
-       
-    // do pattern matching for email
+    } 
 }
 $("#password").on("blur", ()=>validate5())
 const passPattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*\?]).{6,12}";
@@ -101,6 +95,20 @@ const validate5=function(){
     }
 }
 
+$("#cpassword").on("blur", ()=>validate6())
+
+const validate6=function(){
+    $("#error6").text("");
+    const password=$("#password").val();
+    const cpassword=$("#cpassword").val();
+    if(password!=cpassword){
+        $("#error6").text("Password must match")
+        return false;
+    }
+    else
+        return true;
+}
+
 $("#registerForm").submit(()=>validateAll())
 
 function validateAll(){
@@ -110,5 +118,6 @@ function validateAll(){
    const r3=validate3();
    const r4=validate4();
    const r5=validate5();
-   return  r1 && r2 && r3 && r4 && r5
+   const r6=validate6();
+   return  r1 && r2 && r3 && r4 && r5 && r6
 }
