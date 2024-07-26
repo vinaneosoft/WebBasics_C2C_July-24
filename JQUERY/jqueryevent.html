@@ -17,21 +17,19 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         let courses=[];
-        const checkNodes=$("[name='course']")
-       // console.log($("[name='course']").val());
-        console.log(checkNodes);
+        const checkNodes=$("[name='course']");
+       // console.log(checkNodes);
         checkNodes.change(()=>collectData())
         function collectData(){
-            courses=[]
-            $.each(checkNodes, function(key, checkbox){
-                //console.log(checkbox); // javascript node
-                if(checkbox.checked)
-                    courses.push(checkbox.value);
-          })
-          console.log(courses);
+            courses=[];
+            $("[name='course']").each(function (i, ele){
+            if($(this).prop("checked"))
+                courses.push($(this).val());
+            });
+            console.log(courses);
         }
        
-     //  console.log( $("#course1").val());
+      
     </script>
 </body>
 </html>
