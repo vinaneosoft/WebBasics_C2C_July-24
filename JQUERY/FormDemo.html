@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .errorblock{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="Success.html" id="registerForm" novalidate>
+         <div>
+            <label for="firstname">Enter First Name:</label>
+            <input id="firstname"  name="myname" required  pattern="[A-Za-z ]*" />
+         </div>
+         <div class="errorblock">
+            <b id="error1"></b>
+         </div>
+         <br>
+        <div>
+            <label for="lastname">Enter Last Name:</label>
+            <input type="text" id="lastname" name="myname" placeholder="Enter last name" pattern="[A-Za-z ]{2,20}" />
+        </div> 
+        <div class="errorblock">
+            <b id="error2"></b>
+         </div>
+        <br>
+        <div>
+            <label for="age">Enter age:</label>
+            <input type="number" id="age" min="12" max="40" required value="34" />
+        </div>
+        <div class="errorblock">
+            <b id="error3"></b>
+         </div>
+        <br>
+        <div>
+            <label for="mailid">Enter email:</label>
+            <input type="email" id="mailid" required />
+        </div>
+        <div class="errorblock">
+            <b id="error4"></b>
+         </div>
+        <br>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="text" id="password" required  />
+        </div>
+        <div class="errorblock">
+            <b id="error5"></b>
+         </div>
+        <br>
+        <div>
+            <label for="comments">Add Extra Comments:</label>
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+          <!--   <button  type="submit">SUBMIT</button> -->
+             <input type="submit"  /> 
+            <!-- <input type="image" src="./Media/moonlight.jpg" alt="moon" height="100" width="100">--> 
+            <input type="reset" />
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JS/Validation.js"></script>
+</body>
+</html>

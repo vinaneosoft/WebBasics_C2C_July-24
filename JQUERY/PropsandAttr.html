@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props</title>
+</head>
+<body>
+    <input type="password" id="pass" name="pass"   required placeholder="enter password">
+    <input type="checkbox" id="showpassword"><label for="showpassword">show password</label>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+       console.log($("#pass").val()); // correct
+       console.log($("#pass").prop("placeholder"));
+       console.log($("#pass").attr("placeholder"));
+       $("#pass").attr("placeholder", "enter your password");
+       $("#pass").prop("placeholder", "add your password")
+       $("#pass").addClass("passwordNode")
+       console.log($("#pass").attr("value")); // bad way
+    </script>
+    <!-- if u check the checkbox password must be readable, if u uncheck, password must be encoded-->
+</body>
+</html>
