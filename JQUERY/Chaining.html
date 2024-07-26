@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAINING</title>
+    <style>
+        .chainBlock{
+            border: 2px groove lightpink;
+            width: 70%;
+            height: 200px;
+            background: linear-gradient(orange, blue, brown);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="chainBlock">CHAINING</h1>
+    <div class="chainBlock">
+        This block we have to hide, show, slide up, slide down, fade out and fade in
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                /*effect methods can be chained*/
+        
+                setInterval(()=>{
+                    $(".chainBlock").hide(2000).show(2000).slideUp(2000).slideDown(1000).fadeOut(1000).fadeIn(1000);
+                },7000)
+               
+            },
+            
+        )
+
+      
+    </script>
+</body>
+</html>
